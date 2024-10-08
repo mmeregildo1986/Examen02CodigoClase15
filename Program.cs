@@ -2,39 +2,41 @@
 using Examen02CodigoClase15.Clases;
 using Examen02CodigoClase15.Interfaces;
 
-////CARGANDO EMPLEADO
-List<EmpleadoBase> empleados = new List<EmpleadoBase>();
 
-Gerente gerente = new Gerente
-{
-    IdEmpleado = 1,
-    Nombre = "Luis Montero",
-    Puesto = "Gerente Desarrollo"
-};
 
-Desarrollador desarrollador = new Desarrollador
-{
-    IdEmpleado = 2,
-    Nombre = "Joel Arroyo",
-    Puesto = "Desarrollador Senior"
-};
-GerenteRRHH gerenteRRHH = new GerenteRRHH
-{
-    IdEmpleado = 3,
-    Nombre = "José Cárdenas",
-    Puesto = "Gerente RRHH"
-};
-ConsultorExterno consultorExterno = new ConsultorExterno
-{
-    IdEmpleado = 4,
-    Nombre = "Romulo Meregido",
-    Puesto = "Desarrollador Senior"
-};
+    List<EmpleadoBase> empleados = new List<EmpleadoBase>();
 
-empleados.Add(gerente);
-empleados.Add(desarrollador);
-empleados.Add(gerenteRRHH);
-empleados.Add(consultorExterno);
+    Gerente gerente = new Gerente
+    {
+        IdEmpleado = 1,
+        Nombre = "Luis Montero",
+        Puesto = "Gerente Desarrollo"
+    };
+    Desarrollador desarrollador = new Desarrollador
+    {
+        IdEmpleado = 2,
+        Nombre = "Joel Arroyo",
+        Puesto = "Desarrollador Senior"
+    };
+    GerenteRRHH gerenteRRHH = new GerenteRRHH
+    {
+        IdEmpleado = 3,
+        Nombre = "José Cárdenas",
+        Puesto = "Gerente RRHH"
+    };
+    ConsultorExterno consultorExterno = new ConsultorExterno
+    {
+        IdEmpleado = 4,
+        Nombre = "Romulo Meregido",
+        Puesto = "Desarrollador Senior"
+    };
+
+    empleados.Add(gerente);
+    empleados.Add(desarrollador);
+    empleados.Add(gerenteRRHH);
+    empleados.Add(consultorExterno);
+
+
 
 void menu()
 {
@@ -168,11 +170,10 @@ void mostrarListado()
     }
 }
 
+
 menu();
 
-
-////SALIR
-Console.Read();
+    Console.Read();
 
 
 
